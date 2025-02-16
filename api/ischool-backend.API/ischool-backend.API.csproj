@@ -17,4 +17,9 @@
     <ProjectReference Include="..\ischool-backend.Infrastructure\ischool-backend.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+
 </Project>
