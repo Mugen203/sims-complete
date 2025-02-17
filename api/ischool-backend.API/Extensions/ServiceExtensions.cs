@@ -1,4 +1,6 @@
 using System;
+using ischool_backend.Common.Interfaces;
+using ischool_backend.Common.Logging;
 
 namespace ischool_backend.API.Extensions;
 
@@ -19,4 +21,7 @@ public static class ServiceExtensions
         {
 
         });
+
+    public static void ConfigureLoggerService(this IServiceCollection services) =>
+        services.AddSingleton<ILoggerManager, LoggerManager>();
 }
