@@ -1,4 +1,4 @@
-@ischool_backend.API_HostAddress = http://localhost:5163
+@ischool_backend.API_HostAddress = http://localhost:5001
 
 GET {{ischool_backend.API_HostAddress}}/weatherforecast/
 Accept: application/json
