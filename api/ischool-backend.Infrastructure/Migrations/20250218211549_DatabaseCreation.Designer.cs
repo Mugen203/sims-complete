@@ -12,7 +12,7 @@ using ischool_backend.Infrastructure;
 namespace ischool_backend.Infrastructure.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20250218201921_DatabaseCreation")]
+    [Migration("20250218211549_DatabaseCreation")]
     partial class DatabaseCreation
     {
         /// <inheritdoc />
@@ -335,7 +335,7 @@ namespace ischool_backend.Infrastructure.Migrations
                     b.Property<int>("Semester")
                         .HasColumnType("int");
 
-                    b.Property<string>("StudentId")
+                    b.Property<string>("StudentID")
                         .IsRequired()
                         .HasMaxLength(13)
                         .HasColumnType("nvarchar(13)");
@@ -348,7 +348,7 @@ namespace ischool_backend.Infrastructure.Migrations
 
                     b.HasKey("AccountId");
 
-                    b.HasIndex("StudentId")
+                    b.HasIndex("StudentID")
                         .IsUnique();
 
                     b.ToTable("FeeAccounts");
@@ -749,7 +749,7 @@ namespace ischool_backend.Infrastructure.Migrations
                 {
                     b.HasOne("ischool_backend.Core.Entities.Student", "Student")
                         .WithOne("FeeAccount")
-                        .HasForeignKey("ischool_backend.Core.Entities.FeeAccount", "StudentId")
+                        .HasForeignKey("ischool_backend.Core.Entities.FeeAccount", "StudentID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

@@ -36,8 +36,17 @@ namespace ischool_backend.Core.Entities
         [Required]
         [ForeignKey("Student")]
         [MaxLength(13, ErrorMessage = "StudentId cannot exceed 13 characters")]
-        public required string StudentId { get; set; }
+        public required string StudentID { get; set; }
 
         public Student Student { get; set; } = null!;
+
+
+        // Allow object initialization without parameters
+        public FeeAccount() { }
+        public FeeAccount(string studentId, string academicYear)
+        {
+            StudentID = studentId ?? throw new ArgumentNullException(nameof(studentId));
+            AcademicYear = academicYear ?? throw new ArgumentNullException(nameof(academicYear));
+        }
     }
 }

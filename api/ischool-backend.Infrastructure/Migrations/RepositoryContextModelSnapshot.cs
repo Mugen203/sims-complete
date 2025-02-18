@@ -332,7 +332,7 @@ namespace ischool_backend.Infrastructure.Migrations
                     b.Property<int>("Semester")
                         .HasColumnType("int");
 
-                    b.Property<string>("StudentId")
+                    b.Property<string>("StudentID")
                         .IsRequired()
                         .HasMaxLength(13)
                         .HasColumnType("nvarchar(13)");
@@ -345,7 +345,7 @@ namespace ischool_backend.Infrastructure.Migrations
 
                     b.HasKey("AccountId");
 
-                    b.HasIndex("StudentId")
+                    b.HasIndex("StudentID")
                         .IsUnique();
 
                     b.ToTable("FeeAccounts");
@@ -746,7 +746,7 @@ namespace ischool_backend.Infrastructure.Migrations
                 {
                     b.HasOne("ischool_backend.Core.Entities.Student", "Student")
                         .WithOne("FeeAccount")
-                        .HasForeignKey("ischool_backend.Core.Entities.FeeAccount", "StudentId")
+                        .HasForeignKey("ischool_backend.Core.Entities.FeeAccount", "StudentID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

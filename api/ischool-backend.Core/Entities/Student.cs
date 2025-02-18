@@ -74,9 +74,43 @@ public class Student
     public required FeeAccount FeeAccount { get; set; }
     public ICollection<BorrowRequest> BorrowRequests { get; set; }
 
+
+    // Parameterless constructor for EF Core seeding and object initialization
     public Student()
     {
-        // Initialize collections to prevent null reference exceptions
+        ClassEnrollments = new HashSet<ClassEnrollment>();
+        AttendanceRecords = new HashSet<AttendanceRecord>();
+        Grades = new HashSet<Grade>();
+        BorrowRequests = new HashSet<BorrowRequest>();
+        // You can either create a default FeeAccount here or allow it to be set later
+        // For seeding purposes, you might want to leave it uninitialized if it's set by your service
+    }
+
+    public Student(string studentId, string firstName, string lastName, DateTimeOffset dateOfBirth, Gender gender, string address, string email, string phone, DateTimeOffset enrollmentDate, string degreeProgram, string major, EnrollmentStatus enrollmentStatus, bool isInternational)
+    {
+        StudentID = studentId;
+        FirstName = firstName;
+        LastName = lastName;
+        DateOfBirth = dateOfBirth;
+        Gender = gender;
+        Address = address;
+        Email = email;
+        Phone = phone;
+        EnrollmentDate = enrollmentDate;
+        DegreeProgram = degreeProgram;
+        Major = major;
+        EnrollmentStatus = enrollmentStatus;
+        IsInternational = isInternational;
+
+        // Automatically create a FeeAccount for the student
+        FeeAccount = new FeeAccount
+        {
+            StudentID = StudentID,
+            AcademicYear = DateTimeOffset.UtcNow.Year + "-" + (DateTimeOffset.UtcNow.Year + 1)
+        };
+
+
+        // Initialize collections
         ClassEnrollments = new HashSet<ClassEnrollment>();
         AttendanceRecords = new HashSet<AttendanceRecord>();
         Grades = new HashSet<Grade>();

@@ -232,14 +232,14 @@ namespace ischool_backend.Infrastructure.Migrations
                     Currency = table.Column<int>(type: "int", nullable: false),
                     Semester = table.Column<int>(type: "int", nullable: false),
                     AcademicYear = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    StudentId = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false)
+                    StudentID = table.Column<string>(type: "nvarchar(13)", maxLength: 13, nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_FeeAccounts", x => x.AccountId);
                     table.ForeignKey(
-                        name: "FK_FeeAccounts_Students_StudentId",
-                        column: x => x.StudentId,
+                        name: "FK_FeeAccounts_Students_StudentID",
+                        column: x => x.StudentID,
                         principalTable: "Students",
                         principalColumn: "StudentID",
                         onDelete: ReferentialAction.Cascade);
@@ -441,9 +441,9 @@ namespace ischool_backend.Infrastructure.Migrations
                 column: "StudentId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_FeeAccounts_StudentId",
+                name: "IX_FeeAccounts_StudentID",
                 table: "FeeAccounts",
-                column: "StudentId",
+                column: "StudentID",
                 unique: true);
 
             migrationBuilder.CreateIndex(
