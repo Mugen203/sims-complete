@@ -45,9 +45,9 @@ public class Course
     public ClassLocation ClassLocation { get; set; }
 
     // Navigation properties
-    public virtual ICollection<ClassSchedule> ClassSchedules { get; set; }
-    public virtual ICollection<ClassEnrollment> ClassEnrollments { get; set; }
-    public virtual ICollection<Grade> Grades { get; set; }
+    public ICollection<ClassSchedule> ClassSchedules { get; set; }
+    public ICollection<ClassEnrollment> ClassEnrollments { get; set; }
+    public ICollection<Grade> Grades { get; set; }
 
     public Course()
     {

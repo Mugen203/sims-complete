@@ -45,14 +45,13 @@ public class Lecturer
     [MaxLength(200, ErrorMessage = "Credentials cannot exceed 200 characters")]
     public required string Credentials { get; set; }
 
-    // Optional: Keep gender if you need it for your application logic, though it's not in the schema
     [EnumDataType(typeof(Gender))]
     public Gender? Gender { get; set; }
 
     // Navigation properties
-    public virtual ICollection<ClassSchedule> ClassSchedules { get; set; }
-    public virtual ICollection<ClassEnrollment> ClassEnrollments { get; set; }
-    public virtual ICollection<LecturerEvaluation> Evaluations { get; set; }
+    public ICollection<ClassSchedule> ClassSchedules { get; set; }
+    public ICollection<ClassEnrollment> ClassEnrollments { get; set; }
+    public ICollection<LecturerEvaluation> Evaluations { get; set; }
 
     public Lecturer()
     {

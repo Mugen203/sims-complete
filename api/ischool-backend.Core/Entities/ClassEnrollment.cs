@@ -52,6 +52,6 @@ namespace ischool_backend.Core.Entities
         public Lecturer Lecturer { get; set; } = null!;
 
         // Optional navigation property to Grade
-        // public ICollection<Grade> Grades { get; set; } = new List<Grade>();
+        public ICollection<Grade> Grades { get; set; } = [];
     }
 }

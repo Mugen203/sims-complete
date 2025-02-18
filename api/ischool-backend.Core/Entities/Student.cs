@@ -68,11 +68,11 @@ public class Student
 
 
     // Navigation properties
-    public virtual ICollection<ClassEnrollment> ClassEnrollments { get; set; }
-    public virtual ICollection<AttendanceRecord> AttendanceRecords { get; set; }
-    public virtual ICollection<Grade> Grades { get; set; }
-    public required virtual FeeAccount FeeAccount { get; set; }
-    public virtual ICollection<BorrowRequest> BorrowRequests { get; set; }
+    public ICollection<ClassEnrollment> ClassEnrollments { get; set; }
+    public ICollection<AttendanceRecord> AttendanceRecords { get; set; }
+    public ICollection<Grade> Grades { get; set; }
+    public required FeeAccount FeeAccount { get; set; }
+    public ICollection<BorrowRequest> BorrowRequests { get; set; }
 
     public Student()
     {

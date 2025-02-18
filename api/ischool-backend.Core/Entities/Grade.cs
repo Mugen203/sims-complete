@@ -17,6 +17,10 @@ public class Grade
     [Required(ErrorMessage = "StudentID is required")]
     public required string StudentID { get; set; }
 
+    [DataType(DataType.Date)]
+    public DateTimeOffset DateAwarded { get; set; }
+    public int Credits { get; set; }
+
     [Required]
     [EnumDataType(typeof(GradeValue))]
     public GradeValue GradeValue { get; set; }

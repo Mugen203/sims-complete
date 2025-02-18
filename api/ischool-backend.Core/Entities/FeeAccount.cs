@@ -32,11 +32,12 @@ namespace ischool_backend.Core.Entities
         [Display(Name = "Academic Year")]
         public required string AcademicYear { get; set; }
 
-        // Navigation property
+        // Navigation properties
         [Required]
         [ForeignKey("Student")]
+        [MaxLength(15, ErrorMessage = "StudentId cannot exceed 15 characters")]
         public required string StudentId { get; set; }
 
-        public Student? Student { get; set; } // Navigation property
+        public Student Student { get; set; } = null!;
     }
 }

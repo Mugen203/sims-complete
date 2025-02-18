@@ -39,7 +39,7 @@ namespace ischool_backend.Core.Entities
         public string Notes { get; set; } = string.Empty;
 
         // Navigation properties
-        public virtual required Student Student { get; set; }
-        public virtual required ClassSession ClassSession { get; set; }
+        public Student Student { get; set; } = null!;
+        public ClassSession ClassSession { get; set; } = null!;
     }
 }
