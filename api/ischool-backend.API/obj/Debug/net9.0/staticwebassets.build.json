@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "3mvGEA6CyypR196JF8zgNWMvMtDgZSHXjbM0qcC36/Y=",
+  "Source": "ischool-backend.API",
+  "BasePath": "_content/ischool-backend.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

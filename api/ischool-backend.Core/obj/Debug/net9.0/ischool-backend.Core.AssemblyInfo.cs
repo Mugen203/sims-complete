@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ischool-backend.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8139babb6fbcede3a288e774905e1106352d2c65")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27ef16c9d7752165e98a49693c36ee5e1a20f807")]
 [assembly: System.Reflection.AssemblyProductAttribute("ischool-backend.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ischool-backend.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

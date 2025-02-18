@@ -20,7 +20,7 @@ namespace ischool_backend.Core.Entities
         public required string CourseCode { get; set; }
 
         [Required(ErrorMessage = "LecturerID is required")]
-        [MaxLength(15)]
+        [MaxLength(13)]
         public required string LecturerID { get; set; }
 
         [Required]

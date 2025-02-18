@@ -35,7 +35,7 @@ namespace ischool_backend.Core.Entities
         // Navigation properties
         [Required]
         [ForeignKey("Student")]
-        [MaxLength(15, ErrorMessage = "StudentId cannot exceed 15 characters")]
+        [MaxLength(13, ErrorMessage = "StudentId cannot exceed 13 characters")]
         public required string StudentId { get; set; }
 
         public Student Student { get; set; } = null!;

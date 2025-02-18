@@ -17,7 +17,7 @@ namespace ischool_backend.Core.Entities
 
         [Required(ErrorMessage = "ClassSessionID is required")]
         [ForeignKey("ClassSession")]
-        public required string ClassSessionID { get; set; }
+        public required Guid ClassSessionID { get; set; }
 
         [Required(ErrorMessage = "MarkTime is required")]
         public DateTimeOffset MarkTime { get; set; }

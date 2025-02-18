@@ -1,0 +1,13 @@
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\bin\Debug\net9.0\ischool-backend.Common.deps.json
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\bin\Debug\net9.0\ischool-backend.Common.dll
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\bin\Debug\net9.0\ischool-backend.Common.pdb
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\obj\Debug\net9.0\ischool-backend.Common.csproj.AssemblyReference.cache
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\obj\Debug\net9.0\ischool-backend.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\obj\Debug\net9.0\ischool-backend.Common.AssemblyInfoInputs.cache
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\obj\Debug\net9.0\ischool-backend.Common.AssemblyInfo.cs
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\obj\Debug\net9.0\ischool-backend.Common.csproj.CoreCompileInputs.cache
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\obj\Debug\net9.0\ischool-backend.Common.sourcelink.json
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\obj\Debug\net9.0\ischool-backend.Common.dll
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\obj\Debug\net9.0\refint\ischool-backend.Common.dll
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\obj\Debug\net9.0\ischool-backend.Common.pdb
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Common\obj\Debug\net9.0\ref\ischool-backend.Common.dll

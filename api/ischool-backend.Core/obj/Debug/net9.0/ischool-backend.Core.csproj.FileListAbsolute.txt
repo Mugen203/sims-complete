@@ -1,0 +1,16 @@
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\bin\Debug\net9.0\ischool-backend.Core.deps.json
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\bin\Debug\net9.0\ischool-backend.Core.dll
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\bin\Debug\net9.0\ischool-backend.Core.pdb
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\bin\Debug\net9.0\ischool-backend.Common.dll
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\bin\Debug\net9.0\ischool-backend.Common.pdb
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\obj\Debug\net9.0\ischool-backend.Core.csproj.AssemblyReference.cache
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\obj\Debug\net9.0\ischool-backend.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\obj\Debug\net9.0\ischool-backend.Core.AssemblyInfoInputs.cache
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\obj\Debug\net9.0\ischool-backend.Core.AssemblyInfo.cs
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\obj\Debug\net9.0\ischool-backend.Core.csproj.CoreCompileInputs.cache
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\obj\Debug\net9.0\ischool-backend.Core.sourcelink.json
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\obj\Debug\net9.0\ischool-.FADDD9CD.Up2Date
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\obj\Debug\net9.0\ischool-backend.Core.dll
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\obj\Debug\net9.0\refint\ischool-backend.Core.dll
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\obj\Debug\net9.0\ischool-backend.Core.pdb
+C:\Users\Radahn\WebstormProjects\sims-complete\api\ischool-backend.Core\obj\Debug\net9.0\ref\ischool-backend.Core.dll
