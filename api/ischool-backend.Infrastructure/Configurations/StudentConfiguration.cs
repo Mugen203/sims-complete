@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace ischool_backend.Infrastructure.Configuration;
+namespace ischool_backend.Infrastructure.Configurations;
 
 public class StudentConfiguration : IEntityTypeConfiguration<Student>
 {
