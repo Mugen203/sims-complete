@@ -1,4 +1,3 @@
-using System;
 using ischool_backend.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,7 +7,6 @@ public class RepositoryContext : DbContext
 {
     public RepositoryContext(DbContextOptions options) : base(options)
     {
-
     }
 
     //DBSet Properties For Core Entities
@@ -27,5 +25,4 @@ public class RepositoryContext : DbContext
     public DbSet<Grade> Grades { get; set; }
     public DbSet<LecturerEvaluation> LecturerEvaluations { get; set; }
     public DbSet<LecturerEvaluationDetail> LecturerEvaluationDetails { get; set; }
-
 }

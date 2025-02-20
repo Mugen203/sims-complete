@@ -1,4 +1,3 @@
-using System;
 using ischool_backend.Common.Interfaces;
 using NLog;
 
@@ -6,16 +5,25 @@ namespace ischool_backend.Common.Logging;
 
 public class LoggerManager : ILoggerManager
 {
-    private static ILogger logger = LogManager.GetCurrentClassLogger();
+    private static readonly ILogger logger = LogManager.GetCurrentClassLogger();
 
-    public LoggerManager()
+    public void LogDebug(string message)
     {
+        logger.Debug(message);
     }
-    public void LogDebug(string message) => logger.Debug(message);
 
-    public void LogError(string message) => logger.Error(message);
+    public void LogError(string message)
+    {
+        logger.Error(message);
+    }
 
-    public void LogInfo(string message) => logger.Info(message);
+    public void LogInfo(string message)
+    {
+        logger.Info(message);
+    }
 
-    public void LogWarn(string message) => logger.Warn(message);
+    public void LogWarn(string message)
+    {
+        logger.Warn(message);
+    }
 }

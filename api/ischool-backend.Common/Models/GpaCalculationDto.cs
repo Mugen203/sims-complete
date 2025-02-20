@@ -1,4 +1,3 @@
-using System;
 using ischool_backend.Common.Enums;
 
 namespace ischool_backend.Common.Models;

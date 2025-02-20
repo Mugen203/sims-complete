@@ -1,4 +1,3 @@
-using System;
 using ischool_backend.Common.Interfaces;
 using ischool_backend.Common.Logging;
 
@@ -6,7 +5,8 @@ namespace ischool_backend.API.Extensions;
 
 public static class ServiceExtensions
 {
-    public static void ConfigureCors(this IServiceCollection services) =>
+    public static void ConfigureCors(this IServiceCollection services)
+    {
         services.AddCors(options =>
         {
             options.AddPolicy("CorsPolicy", builder =>
@@ -14,14 +14,16 @@ public static class ServiceExtensions
                     .AllowAnyMethod()
                     .AllowAnyHeader());
         });
+    }
 
     //TODO: IIS
-    public static void ConfigureIISIntegration(this IServiceCollection services) =>
-        services.Configure<IISOptions>(options =>
-        {
+    public static void ConfigureIISIntegration(this IServiceCollection services)
+    {
+        services.Configure<IISOptions>(options => { });
+    }
 
-        });
-
-    public static void ConfigureLoggerService(this IServiceCollection services) =>
+    public static void ConfigureLoggerService(this IServiceCollection services)
+    {
         services.AddSingleton<ILoggerManager, LoggerManager>();
+    }
 }

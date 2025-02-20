@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\ischool-backend.API.props" />
-</Project>

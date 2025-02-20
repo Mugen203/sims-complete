@@ -5,6 +5,6 @@ public enum PaymentMethod
     MobileMoney = 1,
     DebitCard = 2,
     BankTransfer = 3,
-
-    // Add more payment methods as needed
+    Cheque = 4,
+    Cash = 5,
 }

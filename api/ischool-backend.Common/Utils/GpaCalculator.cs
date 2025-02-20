@@ -1,4 +1,3 @@
-using System;
 using ischool_backend.Common.Enums;
 using ischool_backend.Common.Models;
 
@@ -29,19 +28,17 @@ public class GpaCalculator
     public static double CalculateGpa(IEnumerable<GpaCalculationDto> enrollments)
     {
         double totalPoints = 0;
-        int totalCredits = 0;
+        var totalCredits = 0;
 
         foreach (var enrollment in enrollments)
-        {
             if (enrollment.Grade.HasValue && GradePointMapping.ContainsKey(enrollment.Grade.Value))
             {
-                double gradePoint = GradePointMapping[enrollment.Grade.Value];
-                int creditHours = enrollment.CreditHours;
+                var gradePoint = GradePointMapping[enrollment.Grade.Value];
+                var creditHours = enrollment.CreditHours;
 
                 totalPoints += gradePoint * creditHours;
                 totalCredits += creditHours;
             }
-        }
 
         return totalCredits == 0 ? 0.0 : totalPoints / totalCredits;
     }

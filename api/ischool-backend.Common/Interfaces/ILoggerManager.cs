@@ -1,5 +1,3 @@
-using System;
-
 namespace ischool_backend.Common.Interfaces;
 
 public interface ILoggerManager

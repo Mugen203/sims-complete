@@ -9,42 +9,271 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd4fc1eb-aa0f-400f-a15e-04b6c7747de6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/Class.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/AttendanceStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/BorrowRequestStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ischool-backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ischool-backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/ContextFactory/RepositoryContextFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/ContextFactory/RepositoryContextFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/Extensions/ServiceExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/Extensions/ServiceExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Azure.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Azure.Identity.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Humanizer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.Build.Locator.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.SqlServer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.Identity.Client.Extensions.Msal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.Identity.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.OpenApi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.SqlServer.Server.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/Mono.TextTemplating.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/NLog.Extensions.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/NLog.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.ClientModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.CodeDom.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.Composition.AttributedModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.Composition.Convention.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.Composition.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.Composition.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.Composition.TypedParts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.Memory.Data.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.Security.Permissions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/appsettings.Production.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ischool-backend.API.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ischool-backend.API.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ischool-backend.API.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ischool-backend.API.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ischool-backend.API.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ischool-backend.API.staticwebassets.endpoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ischool-backend.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ischool-backend.Common.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ischool-backend.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ischool-backend.Core.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ischool-backend.Infrastructure.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ischool-backend.Infrastructure.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/nlog.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.API/ischool-backend.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/ischool-backend.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/nlog.config" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/nlog.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-.2281E11B.Up2Date" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/ischool-backend.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/ischool-backend.API.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/ischool-backend.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/ischool-backend.API.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/ischool-backend.API.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/ischool-backend.API.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ref/ischool-backend.API.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/refint/ischool-backend.API.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/staticwebassets/msbuild.build.ischool-backend.API.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.ischool-backend.API.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.ischool-backend.API.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/ischool-backend.API.csproj.EntityFrameworkCore.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/rider.project.model.nuget.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/Enums/CommonGrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/Enums/CommonGrade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/Interfaces/ILoggerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/Interfaces/ILoggerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/Logging/LoggerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/Logging/LoggerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/Models/GpaCalculationDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/Models/GpaCalculationDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/Utils/GpaCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/Utils/GpaCalculator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/bin/Debug/net9.0/ischool-backend.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/bin/Debug/net9.0/ischool-backend.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/bin/Debug/net9.0/ischool-backend.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/bin/Debug/net9.0/ischool-backend.Common.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/ischool-backend.Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/ischool-backend.Common.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ref/ischool-backend.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ref/ischool-backend.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/refint/ischool-backend.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/refint/ischool-backend.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/rider.project.model.nuget.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/AttendanceRecord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/AttendanceRecord.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/Book.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/BorrowRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/BorrowRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/ClassEnrollment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/ClassEnrollment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/ClassSchedule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/ClassSchedule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/ClassSession.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/ClassSession.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/Course.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/Course.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/FeeAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/FeeAccount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/FeePayment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/FeePayment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/Grade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/Grade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/Lecturer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/Lecturer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/LecturerEvaluation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/LecturerEvaluation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/LecturerEvaluationDetail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/LecturerEvaluationDetail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/Library.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/Library.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/Student.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/Student.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/BookCategory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/BookCategory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/BookStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/BookStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/ClassLocation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/ClassLocation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/ClassSessionStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/ClassSessionStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/CourseCategory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/CourseCategory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/Currency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/Currency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/EnrollmentStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/EnrollmentStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/EvaluationCategory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/EvaluationCategory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/Gender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/Gender.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/GradeValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/GradeValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/Level.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/PaymentMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/PaymentMethod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/PaymentStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/PaymentStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Enums/Semester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Enums/Semester.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Mappers/EnrollmentMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Mappers/EnrollmentMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Mappers/GradeMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Mappers/GradeMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/bin/Debug/net9.0/ischool-backend.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/bin/Debug/net9.0/ischool-backend.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/bin/Debug/net9.0/ischool-backend.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/bin/Debug/net9.0/ischool-backend.Common.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/bin/Debug/net9.0/ischool-backend.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/bin/Debug/net9.0/ischool-backend.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/bin/Debug/net9.0/ischool-backend.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/bin/Debug/net9.0/ischool-backend.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/ischool-backend.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/ischool-backend.Core.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ref/ischool-backend.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ref/ischool-backend.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/refint/ischool-backend.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/refint/ischool-backend.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/rider.project.model.nuget.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Configurations/CourseConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Configurations/CourseConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Configurations/LecturerConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Configurations/LecturerConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Configurations/StudentConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Configurations/StudentConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/RepositoryContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/RepositoryContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/bin/Debug/net9.0/ischool-backend.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/bin/Debug/net9.0/ischool-backend.Common.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/bin/Debug/net9.0/ischool-backend.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/bin/Debug/net9.0/ischool-backend.Core.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/bin/Debug/net9.0/ischool-backend.Infrastructure.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/bin/Debug/net9.0/ischool-backend.Infrastructure.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/bin/Debug/net9.0/ischool-backend.Infrastructure.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/bin/Debug/net9.0/ischool-backend.Infrastructure.runtimeconfig.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/ischool-backend.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/ischool-backend.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-.8A6E7E54.Up2Date" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/ischool-backend.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/ischool-backend.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/ischool-backend.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/ischool-backend.Infrastructure.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ref/ischool-backend.Infrastructure.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/refint/ischool-backend.Infrastructure.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/ischool-backend.Infrastructure.csproj.EntityFrameworkCore.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,22 +284,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Mugen203"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mugen203&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Mugen203/sims-complete.git",
-    "accountId": "37c76e5e-b08f-406b-b09b-54ea3999b390"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mugen203/sims-complete.git&quot;,
+    &quot;accountId&quot;: &quot;37c76e5e-b08f-406b-b09b-54ea3999b390&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2tEEEcIi6h7tWOn9V5sSd6WaLMx" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -78,19 +308,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ischool-backend.API: http">
     <configuration name="ischool-backend.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ischool-backend.API/ischool-backend.API.csproj" />
@@ -132,14 +363,24 @@
       <option name="presentableId" value="Default" />
       <updated>1739908724350</updated>
       <workItem from="1739908727248" duration="322000" />
+      <workItem from="1739935196800" duration="632000" />
+      <workItem from="1740012800201" duration="10511000" />
+      <workItem from="1740025092870" duration="204000" />
+      <workItem from="1740025323092" duration="764000" />
+      <workItem from="1740026146380" duration="2544000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
