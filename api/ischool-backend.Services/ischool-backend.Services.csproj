@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <RootNamespace>ischool_backend.Service</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ischool-backend.Common\ischool-backend.Common.csproj" />
+      <ProjectReference Include="..\ischool-backend.Core\ischool-backend.Core.csproj" />
+      <ProjectReference Include="..\ischool-backend.Infrastructure\ischool-backend.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
