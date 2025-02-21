@@ -1,8 +1,10 @@
 ﻿using ischool_backend.Common.Interfaces;
 using ischool_backend.Common.Models;
+using ischool_backend.Common.Utils;
 using ischool_backend.Core.Entities;
 using ischool_backend.Core.Interfaces.Repository;
 using ischool_backend.Core.Interfaces.Service;
+using ischool_backend.Core.Mappers;
 
 
 namespace ischool_backend.Services;
@@ -192,32 +194,39 @@ internal sealed class StudentService : IStudentService
 
     /// <inheritdoc />
     public async Task<TranscriptDto> GetTranscriptAsync(string studentId, bool trackChanges)
+{
+    _logger.LogInfo($"Attempting to retrieve transcript for student with ID: {studentId}");
+
+    var grades = await _repository.GradeRepository.GetGradesForStudentAsync(studentId, trackChanges);
+
+    var enumerableGrades = grades.ToList();
+    var transcriptCourseRecordDtos = enumerableGrades.Select(grade => new TranscriptCourseRecordDto // Mapping grades to TranscriptCourseRecordDto
     {
-        _logger.LogInfo($"Attempting to retrieve transcript for student with ID: {studentId}");
+        CourseName = grade.Course.CourseName,
+        Grade = (Common.Enums.CommonGrade)grade.GradeValue, // Cast to CommonGradeValue for DTO
+        Credits = grade.Course.Credits,
+        Semester = (Common.Enums.CommonSemester)grade.Semester // Cast to CommonSemester for DTO
+    }).ToList();
 
-        var grades = await _repository.GradeRepository.GetGradesForStudentAsync(studentId, trackChanges);
+    // **Refactored GPA calculation using GpaCalculator and GpaCalculationDto**
+    var gpaCalculationDtos = enumerableGrades.Select(grade => new GpaCalculationDto // Mapping grades to GpaCalculationDto for GPA calculation
+    {
+        Grade = grade.GradeValue.ToCommonGrade(), // Convert Core GradeValue to CommonGrade for GPA calculation
+        CreditHours = grade.Course.Credits
+    }).ToList();
 
-        var transcriptCourseRecordDtos = grades.Select(grade => new TranscriptCourseRecordDto // Mapping grades to DTOs
-        {
-            CourseName = grade.Course.CourseName, // Access CourseName through Course navigation
-            Grade = (Common.Enums.CommonGrade)grade.GradeValue,  // GradeValue is directly on Grade entity
-            Credits = grade.Course.Credits, // Access CreditHours through Course navigation
-            Semester = (Common.Enums.CommonSemester)grade.Semester  // Semester is directly on Grade entity
-        }).ToList();
+    var cumulativeGpa = GpaCalculator.CalculateGpa(gpaCalculationDtos);
 
-        // **Placeholder for GPA calculation.**
-        // You'll need to implement the actual GPA calculation logic based on your grading system.
-        var cumulativeGpa = 0.0m; // Placeholder - Replace with actual GPA calculation
+    var transcriptDto = new TranscriptDto
+    {
+        CourseRecords = transcriptCourseRecordDtos,
+        CumulativeGpa = (decimal)cumulativeGpa // Cast double GPA to decimal for DTO
+    };
 
-        var transcriptDto = new TranscriptDto
-        {
-            CourseRecords = transcriptCourseRecordDtos,
-            CumulativeGpa = cumulativeGpa // Placeholder GPA
-        };
-
-        _logger.LogInfo($"Successfully retrieved transcript for student with ID: {studentId} with {transcriptCourseRecordDtos.Count} course records.");
-        return transcriptDto;
-    }
+    _logger.LogInfo($"Successfully retrieved transcript for student with ID: {studentId} with {transcriptCourseRecordDtos.Count} course records. GPA: {cumulativeGpa}");
+    return transcriptDto;
+}
+    
 
     /// <inheritdoc />
     public async Task<GpaDto> GetGpaAsync(string studentId, bool trackChanges)
