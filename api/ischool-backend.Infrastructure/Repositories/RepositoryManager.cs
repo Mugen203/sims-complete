@@ -40,20 +40,20 @@ public class RepositoryManager : IRepositoryManager
         _studentRepository = new Lazy<IStudentRepository>(() => new StudentRepository(_repositoryContext));
     }
     
-    public IAttendanceRecordRepository AttendanceRecord => _attendanceRecordRepository.Value;
-    public IBookRepository Book => _bookRepository.Value;
-    public IBorrowRequestRepository BorrowRequest => _borrowRequestRepository.Value;
-    public IClassEnrollmentRepository ClassEnrollment => _classEnrollmentRepository.Value;
-    public IClassScheduleRepository ClassSchedule => _classScheduleRepository.Value;
-    public IClassSessionRepository ClassSession => _classSessionRepository.Value;
-    public IClassRepository Class => _classRepository.Value;
-    public ICourseRepository Course => _courseRepository.Value;
-    public IFeeAccountRepository FeeAccount => _feeAccountRepository.Value;
-    public IFeePaymentRepository FeePayment => _feePaymentRepository.Value;
-    public IGradeRepository Grade => _gradeRepository.Value;
-    public ILecturerEvaluationRepository LecturerEvaluation => _lecturerEvaluationRepository.Value;
-    public ILecturerRepository Lecturer => _lecturerRepository.Value;
-    public IStudentRepository Student => _studentRepository.Value;
+    public IAttendanceRecordRepository AttendanceRecordRepository => _attendanceRecordRepository.Value;
+    public IBookRepository BookRepository => _bookRepository.Value;
+    public IBorrowRequestRepository BorrowRequestRepository => _borrowRequestRepository.Value;
+    public IClassEnrollmentRepository ClassEnrollmentRepository => _classEnrollmentRepository.Value;
+    public IClassScheduleRepository ClassScheduleRepository => _classScheduleRepository.Value;
+    public IClassSessionRepository ClassSessionRepository => _classSessionRepository.Value;
+    public IClassRepository ClassRepository => _classRepository.Value;
+    public ICourseRepository CourseRepository => _courseRepository.Value;
+    public IFeeAccountRepository FeeAccountRepository => _feeAccountRepository.Value;
+    public IFeePaymentRepository FeePaymentRepository => _feePaymentRepository.Value;
+    public IGradeRepository GradeRepository => _gradeRepository.Value;
+    public ILecturerEvaluationRepository LecturerEvaluationRepository => _lecturerEvaluationRepository.Value;
+    public ILecturerRepository LecturerRepository => _lecturerRepository.Value;
+    public IStudentRepository StudentRepository => _studentRepository.Value;
     
     public void Save() => _repositoryContext.SaveChanges();
 }
