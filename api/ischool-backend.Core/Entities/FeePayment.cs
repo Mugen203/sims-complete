@@ -1,4 +1,3 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using ischool_backend.Core.Enums;
@@ -189,7 +188,7 @@ public class FeePayment
     /// Defines a many-to-one relationship between FeePayment and FeeAccount.
     /// </summary>
     [ForeignKey(nameof(AccountId))]
-    public required FeeAccount FeeAccount { get; set; } // Ensures FeeAccount navigation property is always populated
+    public required FeeAccount FeeAccount { get; set; } 
 
     #endregion
 }

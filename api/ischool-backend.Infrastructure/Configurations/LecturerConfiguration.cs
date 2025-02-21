@@ -31,7 +31,7 @@ public class LecturerConfiguration : IEntityTypeConfiguration<Lecturer>
                 HireDate = DateTimeOffset.UtcNow.AddYears(-5),
                 OfficeLocation = "Main Building Office",
                 Credentials = "PhD in Computer Science",
-                Gender = Gender.Male // Corrected to Male based on common "Papa Prince" naming convention
+                Gender = Gender.Male 
             }
         );
     }

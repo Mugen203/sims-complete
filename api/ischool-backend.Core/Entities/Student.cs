@@ -1,4 +1,3 @@
-// Student.cs
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -203,7 +202,7 @@ public class Student
     /// Represents the fee account associated with this student.
     /// Defines a one-to-one relationship between Student and FeeAccount.
     /// </summary>
-    public required FeeAccount FeeAccount { get; set; } // FeeAccount is required for every student
+    public FeeAccount FeeAccount { get; set; } // FeeAccount is required for every student
 
     /// <summary>
     /// Navigation property for BorrowRequests.

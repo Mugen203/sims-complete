@@ -60,7 +60,7 @@ public class Grade
     /// This is also a foreign key to the Course entity.
     /// </summary>
     [Required(ErrorMessage = "Course code is required")]
-    [MaxLength(10, ErrorMessage = "Course code cannot exceed 10 characters")] // Adjusted MaxLength to 10 to match CourseCode in Course entity
+    [MaxLength(10, ErrorMessage = "Course code cannot exceed 10 characters")] 
     public required string CourseCode { get; set; }
 
     /// <summary>
@@ -99,7 +99,7 @@ public class Grade
     /// Validated with a RegularExpression to ensure correct format.
     /// </summary>
     [Required]
-    [RegularExpression(@"^\d{4}-\d{4}$", ErrorMessage = "Academic Year must be in YYYY-YYYY format")] // Fixed error message typo
+    [RegularExpression(@"^\d{4}-\d{4}$", ErrorMessage = "Academic Year must be in YYYY-YYYY format")]
     [Display(Name = "Academic Year")] // For display in UI labels
     [MaxLength(9, ErrorMessage = "Academic Year cannot exceed 9 characters")]
     public required string AcademicYear { get; set; }

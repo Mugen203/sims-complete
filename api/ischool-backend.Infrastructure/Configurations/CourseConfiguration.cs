@@ -1,4 +1,3 @@
-// CourseConfiguration.cs
 using ischool_backend.Core.Entities;
 using ischool_backend.Core.Enums;
 using Microsoft.EntityFrameworkCore;

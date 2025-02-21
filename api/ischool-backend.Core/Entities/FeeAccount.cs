@@ -119,7 +119,7 @@ public class FeeAccount
     /// Represents the student who owns this fee account.
     /// Defines a one-to-one relationship (one FeeAccount per Student).
     /// </summary>
-    public Student Student { get; set; } // Should be required but it's causing issues I cannot fix yet
+    public required Student Student { get; set; } // Should be required but it's causing issues I cannot fix yet
 
     #endregion
 }

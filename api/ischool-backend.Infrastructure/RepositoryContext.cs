@@ -1,4 +1,5 @@
 using ischool_backend.Core.Entities;
+using ischool_backend.Infrastructure.Configurations;
 using Microsoft.EntityFrameworkCore;
 
 namespace ischool_backend.Infrastructure;
@@ -7,6 +8,25 @@ public class RepositoryContext : DbContext
 {
     public RepositoryContext(DbContextOptions options) : base(options)
     {
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfiguration(new CourseConfiguration());
+        modelBuilder.ApplyConfiguration(new LecturerConfiguration());
+        modelBuilder.ApplyConfiguration(new ClassConfiguration());
+        modelBuilder.ApplyConfiguration(new ClassScheduleConfiguration());
+        modelBuilder.ApplyConfiguration(new ClassSessionConfiguration()); 
+        modelBuilder.ApplyConfiguration(new StudentConfiguration());
+        modelBuilder.ApplyConfiguration(new LibraryConfiguration());
+        modelBuilder.ApplyConfiguration(new BookConfiguration());
+        modelBuilder.ApplyConfiguration(new FeeAccountConfiguration());
+        modelBuilder.ApplyConfiguration(new FeePaymentConfiguration());
+        modelBuilder.ApplyConfiguration(new BorrowRequestConfiguration());
+        modelBuilder.ApplyConfiguration(new GradeConfiguration());
+        modelBuilder.ApplyConfiguration(new ClassEnrollmentConfiguration());
+        modelBuilder.ApplyConfiguration(new AttendanceRecordConfiguration());
+        
     }
 
     //DBSet Properties For Core Entities

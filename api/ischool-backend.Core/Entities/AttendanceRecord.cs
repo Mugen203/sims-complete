@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using ischool_backend.Core.Enums; // Assuming your enums are in this namespace
+using ischool_backend.Core.Enums;
 
 namespace ischool_backend.Core.Entities;
 
