@@ -9,38 +9,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd4fc1eb-aa0f-400f-a15e-04b6c7747de6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IBookRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IBorrowRequestRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IClassRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/ICourseRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/ILecturerRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IRepositoryManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IRespositoryBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IStudentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/BookRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/BorrowRequestRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/ClassRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/CourseRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/LecturerRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/RepositoryBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/RepositoryManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/StudentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IAttendanceRecordRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IClassEnrollmentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IClassScheduleRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IClassSessionRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IFeeAccountRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IFeePaymentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IGradeRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/ILecturerEvaluationRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/AttendanceRecordRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/ClassEnrollmentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/ClassScheduleRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/ClassSessionRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/FeeAccountRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/FeePaymentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/GradeRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/LecturerEvaluationRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ischool-backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ischool-backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/ContextFactory/RepositoryContextFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/ContextFactory/RepositoryContextFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/Extensions/ServiceExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/Extensions/ServiceExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/ischool-backend.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/ischool-backend.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Migrations/20250221103653_Initial.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Migrations/20250221103653_Initial.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Migrations/RepositoryContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Migrations/RepositoryContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/RepositoryContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/RepositoryContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +127,7 @@
       <workItem from="1740026146380" duration="5257000" />
       <workItem from="1740039350929" duration="8914000" />
       <workItem from="1740119226688" duration="16760000" />
-      <workItem from="1740147006627" duration="3075000" />
+      <workItem from="1740147006627" duration="4886000" />
     </task>
     <task id="LOCAL-00001" summary="Reformatted with Rider">
       <option name="closed" value="true" />
