@@ -112,6 +112,14 @@ public class ClassSchedule
     /// </summary>
     [ForeignKey(nameof(ClassCode))]
     public required Class Class { get; set; } // Ensures Class navigation property is always populated
+    
+    /// <summary>
+    /// **Navigation property for ClassSessions.**
+    /// **Represents the collection of ClassSession instances associated with this ClassSchedule.**
+    /// **Defines a one-to-many relationship between ClassSchedule and ClassSession.**
+    /// </summary>
+    public ICollection<ClassSession> ClassSessions { get; set; } = new HashSet<ClassSession>();
+
 
     // Removed navigation properties to Course and Lecturer as they are now accessed through the Class navigation property.
 

@@ -5,47 +5,50 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace ischool_backend.Infrastructure.Configurations;
 
+/// <summary>
+/// Configuration class for the ClassSchedule entity that defines relationships, constraints and seeds initial data.
+/// Implements IEntityTypeConfiguration{ClassSchedule} to configure the ClassSchedule entity in the DbContext.
+/// </summary>
 public class ClassScheduleConfiguration : IEntityTypeConfiguration<ClassSchedule>
 {
+    /// <summary>
+    /// Configures the ClassSchedule entity for data seeding, relationships, and constraints.
+    /// Implements the Configure method from IEntityTypeConfiguration{ClassSchedule}.
+    /// Seeds initial ClassSchedule data and configures navigation properties and foreign key relationships.
+    /// </summary>
+    /// <param name="builder">The builder used to configure the entity type.</param>
     public void Configure(EntityTypeBuilder<ClassSchedule> builder)
     {
+      
+        // Configure required navigation property with auto-include
+        // Ensures Class navigation property is always loaded when querying ClassSchedules
+        builder.Navigation(cs => cs.Class)
+               .IsRequired()
+               .AutoInclude();
+
+        // Configure relationship and cascading behavior
+        builder.HasOne(cs => cs.Class)
+               .WithMany(c => c.ClassSchedules)
+               .HasForeignKey(cs => cs.ClassCode)
+               .IsRequired()
+               .OnDelete(DeleteBehavior.Restrict); // Choose appropriate DeleteBehavior
+
+        
+        // Reference existing ClassCode for data seeding
+        const string classCodeForSchedule = "TEST-CLASS-001";
+
+        // Seed initial ClassSchedule data using anonymous type to avoid navigation property issues
         builder.HasData(
-            new ClassSchedule
+            new
             {
-                ScheduleId = new Guid("5e5c3a7a-097d-4d3a-8629-234e03485ce4"),
-                ClassCode = "TEST-CLASS-001",
+                ScheduleId = new Guid("5e5c3a7a-097d-4d3a-8629-234e03485ce4"), 
+                ClassCode = classCodeForSchedule, // Foreign key - ClassCode
                 ClassLocation = ClassLocation.AmericanHigh,
-                Class = new Class
-                {
-                    ClassCode = "TEST-CLASS-001",
-                    CourseCode = "COSC115", 
-                    LecturerID = "L123456789012", 
-                    Semester = Semester.September,
-                    AcademicYear = "2024-2025",
-                    ClassLocation = ClassLocation.AmericanHigh,
-                    Course = new Course
-                    {
-                        CourseCode = "COSC115",
-                        CourseName = "Elements of Programming",
-                        CourseCategory = CourseCategory.CoreComputerScience,
-                        Credits = 3,
-                        Department = "Computer Science",
-                        Description = "Introductory Course for Computer Science Students",
-                    },
-                    Lecturer = new Lecturer
-                    {
-                        LecturerID = "L123456789012", 
-                        FirstName = "Michael",
-                        LastName = "Asare",
-                        Email = "masare@example.com",
-                        Phone = "0213456789",
-                        Department = "Computer Science",
-                        HireDate = DateTimeOffset.UtcNow.AddYears(-5),
-                        OfficeLocation = "Main Building Office",
-                        Credentials = "Masters in Computer Science",
-                        Gender = Gender.Male
-                    }
-                }
-            });
+                StartTime = new TimeSpan(9, 0, 0),
+                EndTime = new TimeSpan(10, 50, 0),
+                DayOfWeek = DayOfWeek.Monday,
+                IsBooked = false // Default value
+            }
+        );
     }
 }

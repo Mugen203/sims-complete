@@ -188,7 +188,7 @@ public class FeePayment
     /// Defines a many-to-one relationship between FeePayment and FeeAccount.
     /// </summary>
     [ForeignKey(nameof(AccountId))]
-    public required FeeAccount FeeAccount { get; set; } 
+    public required FeeAccount FeeAccount { get; set; }
 
     #endregion
 }

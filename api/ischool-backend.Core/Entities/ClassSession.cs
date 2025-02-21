@@ -91,7 +91,7 @@ public class ClassSession
 
     #endregion
 
-    #region Navigation Properties (Keep existing navigation property)
+    #region Navigation Properties 
 
     /// <summary>
     /// Navigation property to the ClassSchedule entity.

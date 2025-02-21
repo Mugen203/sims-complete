@@ -1,4 +1,3 @@
-// LecturerConfiguration.cs
 using ischool_backend.Core.Entities;
 using ischool_backend.Core.Enums;
 using Microsoft.EntityFrameworkCore;
@@ -18,9 +17,9 @@ public class LecturerConfiguration : IEntityTypeConfiguration<Lecturer>
     /// <param name="builder">The builder used to configure the entity type.</param>
     public void Configure(EntityTypeBuilder<Lecturer> builder)
     {
-        // Seed data for Lecturer entity
+        // Seed data for Lecturer entity using anonymous type
         builder.HasData(
-            new Lecturer
+            new
             {
                 LecturerID = "L123456789012",
                 FirstName = "Papa",
@@ -31,7 +30,7 @@ public class LecturerConfiguration : IEntityTypeConfiguration<Lecturer>
                 HireDate = DateTimeOffset.UtcNow.AddYears(-5),
                 OfficeLocation = "Main Building Office",
                 Credentials = "PhD in Computer Science",
-                Gender = Gender.Male 
+                Gender = Gender.Male
             }
         );
     }

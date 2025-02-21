@@ -1,4 +1,3 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using ischool_backend.Core.Enums;
@@ -202,7 +201,7 @@ public class Student
     /// Represents the fee account associated with this student.
     /// Defines a one-to-one relationship between Student and FeeAccount.
     /// </summary>
-    public FeeAccount FeeAccount { get; set; } // FeeAccount is required for every student
+    public required FeeAccount FeeAccount { get; set; } // FeeAccount is required for every student
 
     /// <summary>
     /// Navigation property for BorrowRequests.

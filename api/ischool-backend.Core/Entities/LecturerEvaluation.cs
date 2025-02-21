@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using ischool_backend.Core.Enums;
@@ -112,7 +110,7 @@ public class LecturerEvaluation
     /// Represents the detailed responses or answers provided in this evaluation.
     /// Defines a one-to-many relationship between LecturerEvaluation and LecturerEvaluationDetail.
     /// </summary>
-    public virtual ICollection<LecturerEvaluationDetail> EvaluationDetails { get; set; } // Virtual for lazy loading if needed, use HashSet for initialization
+    public ICollection<LecturerEvaluationDetail> EvaluationDetails { get; set; } // Virtual for lazy loading if needed, use HashSet for initialization
 
     #endregion
 }

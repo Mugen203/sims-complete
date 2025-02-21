@@ -1,4 +1,3 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -72,7 +71,7 @@ public class Library
     /// Navigation property to the collection of Book entities managed by this library.
     /// Defines a one-to-many relationship between Library and Book.
     /// </summary>
-    public virtual ICollection<Book> Books { get; set; } // Collection of Books in this library, virtual for lazy loading
+    public ICollection<Book> Books { get; set; } // Collection of Books in this library
         
     #endregion
 }

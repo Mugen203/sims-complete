@@ -119,7 +119,13 @@ public class FeeAccount
     /// Represents the student who owns this fee account.
     /// Defines a one-to-one relationship (one FeeAccount per Student).
     /// </summary>
-    public required Student Student { get; set; } // Should be required but it's causing issues I cannot fix yet
+    public required Student Student { get; set; }
 
+    /// <summary>
+    /// **Navigation property for FeePayments.**
+    /// **Represents the collection of FeePayment instances associated with this FeeAccount.**
+    /// **Defines a one-to-many relationship between FeeAccount and FeePayment.**
+    /// </summary>
+    public ICollection<FeePayment> FeePayments { get; set; } = new HashSet<FeePayment>();
     #endregion
 }

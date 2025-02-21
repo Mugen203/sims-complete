@@ -1,4 +1,3 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using ischool_backend.Core.Enums;
@@ -125,6 +124,14 @@ public class Book
     /// </summary>
     [ForeignKey(nameof(LibraryId))] // Foreign key attribute
     public required Library Library { get; set; } // Ensures Library navigation property is always populated
+    
+    /// <summary>
+    /// Navigation property for BorrowRequests.
+    /// Represents the borrow requests for this book.
+    /// Defines a one-to-many relationship between Book and BorrowRequest.
+    /// **THIS NAVIGATION PROPERTY WAS MISSING BEFORE AND IS NOW ADDED**
+    /// </summary>
+    public ICollection<BorrowRequest> BorrowRequests { get; set; }
 
     #endregion
 }
