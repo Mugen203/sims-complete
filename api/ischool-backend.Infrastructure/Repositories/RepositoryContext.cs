@@ -1,10 +1,11 @@
 using ischool_backend.Core.Entities;
 using ischool_backend.Infrastructure.Configurations;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace ischool_backend.Infrastructure.Repositories;
 
-public class RepositoryContext : DbContext
+public class RepositoryContext : IdentityDbContext<User>
 {
     public RepositoryContext(DbContextOptions options) : base(options)
     {
@@ -29,6 +30,14 @@ public class RepositoryContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+        
+        modelBuilder.Entity<User>()
+            .HasOne<Student>()
+            .WithOne()
+            .HasForeignKey<User>(u => u.StudentId)
+            .OnDelete(DeleteBehavior.Restrict);
+        
         modelBuilder.ApplyConfiguration(new CourseConfiguration());
         modelBuilder.ApplyConfiguration(new LecturerConfiguration());
         modelBuilder.ApplyConfiguration(new ClassConfiguration());

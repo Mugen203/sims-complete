@@ -1,4 +1,5 @@
 ﻿using ischool_backend.Common.Interfaces;
+using ischool_backend.Core.Entities;
 using ischool_backend.Core.Interfaces.Repository;
 using ischool_backend.Core.Interfaces.Service;
 
@@ -14,4 +15,5 @@ internal sealed class GradeService : IGradeService
         _repository = repository;
         _logger = logger;
     }
+    
 }

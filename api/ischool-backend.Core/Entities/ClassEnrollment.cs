@@ -133,7 +133,7 @@ public class ClassEnrollment
     ///     Represents the grades awarded to this student specifically for this class enrollment.
     ///     Defines a one-to-many relationship between ClassEnrollment and Grade.
     /// </summary>
-    public ICollection<Grade> Grades { get; set; } = new HashSet<Grade>(); // Initialize to empty collection
+    public ICollection<Grade> Grades { get; set; }
 
     // Removed navigation properties to Course and Lecturer as they are accessed through the Class navigation property.
 

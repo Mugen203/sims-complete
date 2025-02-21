@@ -1,32 +1,24 @@
-﻿namespace ischool_backend.Common.Models;
+﻿using ischool_backend.Common.Enums;
+
+namespace ischool_backend.Common.Models;
 
 /// <summary>
 /// Data Transfer Object for a single fee transaction in a statement.
 /// </summary>
-public class FeeTransactionDto
+public class FeePaymentDto
 {
-    /// <summary>
-    /// Date of the transaction.
-    /// </summary>
-    public DateTimeOffset TransactionDate { get; set; }
-
-    /// <summary>
-    /// Type of transaction (e.g., "Tuition Fee", "Payment", "Fine").
-    /// </summary>
-    public string TransactionType { get; set; } = string.Empty;
-
-    /// <summary>
-    /// Description of the transaction.
-    /// </summary>
-    public string Description { get; set; } = string.Empty;
-
-    /// <summary>
-    /// Amount of the transaction.
-    /// </summary>
-    public decimal Amount { get; set; }
-
-    /// <summary>
-    /// Running balance after the transaction.
-    /// </summary>
-    public decimal RunningBalance { get; set; }
+    public DateTimeOffset PaymentDate { get; set; }
+    public decimal AmountPaid { get; set; }
+    public CommonPaymentMethod PaymentMethod { get; set; }
+    public string PaymentReference { get; set; } = string.Empty;
+    public CommonSemester Semester { get; set; }
+    public string AcademicYear { get; set; } = string.Empty;
+    public CommonPaymentStatus Status { get; set; }
+    public string? Description { get; set; }
+    public bool ReceiptIssued { get; set; }
+    public string? ReceiptNumber { get; set; }
+    public string CreatedBy { get; set; } = string.Empty;
+    public DateTimeOffset CreatedAt { get; set; }
+    public string? LastModifiedBy { get; set; }
+    public DateTimeOffset? LastModifiedAt { get; set; }
 }

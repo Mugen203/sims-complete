@@ -1,9 +1,11 @@
 using ischool_backend.Common.Interfaces;
 using ischool_backend.Common.Logging;
+using ischool_backend.Core.Entities;
 using ischool_backend.Core.Interfaces.Repository;
 using ischool_backend.Core.Interfaces.Service;
 using ischool_backend.Infrastructure.Repositories;
 using ischool_backend.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace ischool_backend.API.Extensions;
@@ -46,5 +48,21 @@ public static class ServiceExtensions
     {
         services.AddDbContext<RepositoryContext>(opts =>
             opts.UseSqlServer(configuration.GetConnectionString("sqlConnection")));
+    }
+
+    public static void ConfigureIdentity(this IServiceCollection services)
+    {
+        var builder = services.AddIdentity<User, IdentityRole>(opts =>
+        {
+            opts.Password.RequireDigit = true;
+            opts.Password.RequireLowercase = true;
+            opts.Password.RequireUppercase = true;
+            opts.Password.RequireNonAlphanumeric = true;
+            opts.Password.RequiredLength = 10;
+            opts.User.RequireUniqueEmail = true;
+            opts.Password.RequiredUniqueChars = 1;
+        })
+        .AddEntityFrameworkStores<RepositoryContext>()
+        .AddDefaultTokenProviders();
     }
 }

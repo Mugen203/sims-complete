@@ -1,6 +1,10 @@
-﻿namespace ischool_backend.Core.Entities;
+﻿using Microsoft.AspNetCore.Identity;
 
-public class User
+namespace ischool_backend.Core.Entities;
+
+public class User : IdentityUser
 {
-    
+    public string StudentId { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
 }

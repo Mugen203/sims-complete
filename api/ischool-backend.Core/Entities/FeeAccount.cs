@@ -1,5 +1,3 @@
-// FeeAccount.cs
-
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using ischool_backend.Core.Enums;

@@ -99,7 +99,7 @@ public class ClassSchedule
     ///     Defaults to false. Can be used for scheduling management and conflict detection.
     /// </summary>
     [Required]
-    public bool IsBooked { get; set; } = false;
+    public bool IsBooked { get; set; }
 
     #endregion
 
