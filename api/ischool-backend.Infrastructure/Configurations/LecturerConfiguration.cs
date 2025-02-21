@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 namespace ischool_backend.Infrastructure.Configurations;
 
 /// <summary>
-/// Configuration class for seeding data and configuring constraints for the Lecturer entity.
-/// Implements the <see cref="IEntityTypeConfiguration{Lecturer}"/> interface.
+///     Configuration class for seeding data and configuring constraints for the Lecturer entity.
+///     Implements the <see cref="IEntityTypeConfiguration{Lecturer}" /> interface.
 /// </summary>
 public class LecturerConfiguration : IEntityTypeConfiguration<Lecturer>
 {
     /// <summary>
-    /// Configures the Lecturer entity for data seeding and constraint setup.
+    ///     Configures the Lecturer entity for data seeding and constraint setup.
     /// </summary>
     /// <param name="builder">The builder used to configure the entity type.</param>
     public void Configure(EntityTypeBuilder<Lecturer> builder)

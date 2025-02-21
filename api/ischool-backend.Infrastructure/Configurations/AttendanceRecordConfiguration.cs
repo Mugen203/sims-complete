@@ -2,7 +2,6 @@
 using ischool_backend.Core.Enums;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
 
 namespace ischool_backend.Infrastructure.Configurations;
 
@@ -18,13 +17,13 @@ public class AttendanceRecordConfiguration : IEntityTypeConfiguration<Attendance
         builder.Property(a => a.StudentId).IsRequired();
         builder.Property(a => a.ClassSessionId).IsRequired();
 
-        const string studentIdForAttendance = "222CS01000694"; 
+        const string studentIdForAttendance = "222CS01000694";
         var classSessionIdForAttendance = new Guid("837c7278-3754-4bb6-98ee-7fca53d40677");
 
 
         // Seed data using ANONYMOUS OBJECT and setting ONLY FOREIGN KEY PROPERTIES
         builder.HasData(
-            new 
+            new
             {
                 AttendanceRecordId = Guid.NewGuid(), // Generate Guid for AttendanceRecordId
                 StudentId = studentIdForAttendance, // **Directly set StudentId (FK)**

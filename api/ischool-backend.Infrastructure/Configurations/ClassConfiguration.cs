@@ -6,8 +6,8 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 namespace ischool_backend.Infrastructure.Configurations;
 
 /// <summary>
-/// Configuration class for the Class entity that defines relationships, constraints and seeds initial data.
-/// Implements IEntityTypeConfiguration{Class} to configure the Class entity in the DbContext.
+///     Configuration class for the Class entity that defines relationships, constraints and seeds initial data.
+///     Implements IEntityTypeConfiguration{Class} to configure the Class entity in the DbContext.
 /// </summary>
 public class ClassConfiguration : IEntityTypeConfiguration<Class>
 {

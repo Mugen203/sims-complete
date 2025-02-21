@@ -6,15 +6,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 namespace ischool_backend.Infrastructure.Configurations;
 
 /// <summary>
-/// Configuration class for the Student entity, defining constraints and seed data.
-/// Implements IEntityTypeConfiguration{Student} to configure the Student entity in the DbContext.
+///     Configuration class for the Student entity, defining constraints and seed data.
+///     Implements IEntityTypeConfiguration{Student} to configure the Student entity in the DbContext.
 /// </summary>
 public class StudentConfiguration : IEntityTypeConfiguration<Student>
 {
     /// <summary>
-    /// Configures the Student entity for data seeding and constraint setup.
-    /// Implements the Configure method from IEntityTypeConfiguration{Student}.
-    /// Seeds initial Student data and configures any specific constraints.
+    ///     Configures the Student entity for data seeding and constraint setup.
+    ///     Implements the Configure method from IEntityTypeConfiguration{Student}.
+    ///     Seeds initial Student data and configures any specific constraints.
     /// </summary>
     /// <param name="builder">The builder used to configure the entity type.</param>
     public void Configure(EntityTypeBuilder<Student> builder)
@@ -28,10 +28,11 @@ public class StudentConfiguration : IEntityTypeConfiguration<Student>
 
         // Configure One-to-Many relationship: Student has many BorrowRequests
         builder.HasMany(s => s.BorrowRequests) // Student has many BorrowRequests (collection nav property)
-            .WithOne(br => br.Student)     // Each BorrowRequest belongs to one Student (reference nav property in BorrowRequest)
+            .WithOne(br =>
+                br.Student) // Each BorrowRequest belongs to one Student (reference nav property in BorrowRequest)
             .HasForeignKey(br => br.StudentId) // Foreign key in BorrowRequest is StudentId
             .OnDelete(DeleteBehavior.Restrict);
-        
+
         // Seed data for Student entity using anonymous type
         builder.HasData(
             new

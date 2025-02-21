@@ -5,15 +5,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 namespace ischool_backend.Infrastructure.Configurations;
 
 /// <summary>
-/// Configuration class for the Library entity, defining constraints and seed data.
-/// Implements IEntityTypeConfiguration{Library} to configure the Library entity in the DbContext.
+///     Configuration class for the Library entity, defining constraints and seed data.
+///     Implements IEntityTypeConfiguration{Library} to configure the Library entity in the DbContext.
 /// </summary>
 public class LibraryConfiguration : IEntityTypeConfiguration<Library>
 {
     /// <summary>
-    /// Configures the Library entity for data seeding and constraint setup.
-    /// Implements the Configure method from IEntityTypeConfiguration{Library}.
-    /// Seeds initial Library data and configures any specific constraints.
+    ///     Configures the Library entity for data seeding and constraint setup.
+    ///     Implements the Configure method from IEntityTypeConfiguration{Library}.
+    ///     Seeds initial Library data and configures any specific constraints.
     /// </summary>
     /// <param name="builder">The builder used to configure the entity type.</param>
     public void Configure(EntityTypeBuilder<Library> builder)

@@ -6,15 +6,15 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 namespace ischool_backend.Infrastructure.Configurations;
 
 /// <summary>
-/// Configuration class for the ClassEnrollment entity that defines relationships, constraints and seeds initial data.
-/// Implements IEntityTypeConfiguration{ClassEnrollment} to configure the ClassEnrollment entity in the DbContext.
+///     Configuration class for the ClassEnrollment entity that defines relationships, constraints and seeds initial data.
+///     Implements IEntityTypeConfiguration{ClassEnrollment} to configure the ClassEnrollment entity in the DbContext.
 /// </summary>
 public class ClassEnrollmentConfiguration : IEntityTypeConfiguration<ClassEnrollment>
 {
     /// <summary>
-    /// Configures the ClassEnrollment entity for data seeding, relationships, and constraints.
-    /// Implements the Configure method from IEntityTypeConfiguration{ClassEnrollment}.
-    /// Seeds initial ClassEnrollment data and configures navigation properties and foreign key relationships.
+    ///     Configures the ClassEnrollment entity for data seeding, relationships, and constraints.
+    ///     Implements the Configure method from IEntityTypeConfiguration{ClassEnrollment}.
+    ///     Seeds initial ClassEnrollment data and configures navigation properties and foreign key relationships.
     /// </summary>
     /// <param name="builder">The builder used to configure the entity type.</param>
     public void Configure(EntityTypeBuilder<ClassEnrollment> builder)
@@ -31,11 +31,11 @@ public class ClassEnrollmentConfiguration : IEntityTypeConfiguration<ClassEnroll
 
         // Configure relationships and cascading behavior
         builder.HasOne(ce => ce.Student)
-            .WithMany(s => s.ClassEnrollments) 
+            .WithMany(s => s.ClassEnrollments)
             .HasForeignKey(ce => ce.StudentId)
             .IsRequired()
-            .OnDelete(DeleteBehavior.Restrict); 
-        
+            .OnDelete(DeleteBehavior.Restrict);
+
         builder.HasOne(ce => ce.Class)
             .WithMany(c => c.ClassEnrollments)
             .HasForeignKey(ce => ce.ClassCode)
@@ -46,12 +46,12 @@ public class ClassEnrollmentConfiguration : IEntityTypeConfiguration<ClassEnroll
         // Configure collection navigation for Grades - using field access mode for encapsulation
         builder.Metadata.FindNavigation(nameof(ClassEnrollment.Grades))
             ?.SetPropertyAccessMode(PropertyAccessMode.Field);
-        
+
         // Reference existing Student and Class IDs for data seeding
         const string studentIdForEnrollment = "222CS01000694";
         const string classCodeForEnrollment = "TEST-CLASS-001";
 
-        
+
         // Seed initial ClassEnrollment data using anonymous type to avoid navigation property issues
         builder.HasData(
             new

@@ -1,7 +1,7 @@
 ﻿using ischool_backend.Core.Entities;
+using ischool_backend.Core.Enums;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using ischool_backend.Core.Enums;
 
 namespace ischool_backend.Infrastructure.Configurations;
 

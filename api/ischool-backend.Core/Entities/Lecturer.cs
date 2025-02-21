@@ -1,4 +1,3 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using ischool_backend.Core.Enums;
@@ -6,16 +5,16 @@ using ischool_backend.Core.Enums;
 namespace ischool_backend.Core.Entities;
 
 /// <summary>
-/// Represents a lecturer or instructor in the institution.
-/// Lecturers are responsible for teaching classes and conducting evaluations.
+///     Represents a lecturer or instructor in the institution.
+///     Lecturers are responsible for teaching classes and conducting evaluations.
 /// </summary>
 public class Lecturer
 {
     #region Constructors
 
     /// <summary>
-    /// Parameterless constructor for Entity Framework Core.
-    /// Required for EF Core to create proxies and for database operations like seeding.
+    ///     Parameterless constructor for Entity Framework Core.
+    ///     Required for EF Core to create proxies and for database operations like seeding.
     /// </summary>
     public Lecturer()
     {
@@ -27,7 +26,7 @@ public class Lecturer
     }
 
     /// <summary>
-    /// Parameterized constructor to create a new Lecturer instance with essential details.
+    ///     Parameterized constructor to create a new Lecturer instance with essential details.
     /// </summary>
     /// <param name="lecturerId">Unique identifier for the lecturer.</param>
     /// <param name="firstName">Lecturer's first name.</param>
@@ -65,8 +64,8 @@ public class Lecturer
     #region Properties
 
     /// <summary>
-    /// Unique identifier for the lecturer.
-    /// Serves as the primary key for the Lecturer entity.
+    ///     Unique identifier for the lecturer.
+    ///     Serves as the primary key for the Lecturer entity.
     /// </summary>
     [Key]
     [Required(ErrorMessage = "LecturerID is required")]
@@ -74,30 +73,30 @@ public class Lecturer
     public required string LecturerID { get; set; }
 
     /// <summary>
-    /// Lecturer's first name.
+    ///     Lecturer's first name.
     /// </summary>
     [Required(ErrorMessage = "First name is required")]
     [MaxLength(50, ErrorMessage = "First name cannot exceed 50 characters")]
     public required string FirstName { get; set; }
 
     /// <summary>
-    /// Lecturer's last name.
+    ///     Lecturer's last name.
     /// </summary>
     [Required(ErrorMessage = "Last name is required")]
     [MaxLength(50, ErrorMessage = "Last name cannot exceed 50 characters")]
     public required string LastName { get; set; }
 
     /// <summary>
-    /// Calculated property to get the lecturer's full name.
-    /// Not mapped to the database as it's derived from FirstName and LastName.
-    /// Handles potential null values for FirstName or LastName gracefully.
+    ///     Calculated property to get the lecturer's full name.
+    ///     Not mapped to the database as it's derived from FirstName and LastName.
+    ///     Handles potential null values for FirstName or LastName gracefully.
     /// </summary>
     [NotMapped]
     public string FullName => $"{FirstName} {LastName}".Trim(); // Null-safe FullName calculation
 
     /// <summary>
-    /// Lecturer's email address.
-    /// Validated to ensure it's a properly formatted email.
+    ///     Lecturer's email address.
+    ///     Validated to ensure it's a properly formatted email.
     /// </summary>
     [Required(ErrorMessage = "Email is required")]
     [EmailAddress(ErrorMessage = "Email is invalid")]
@@ -105,46 +104,47 @@ public class Lecturer
     public required string Email { get; set; }
 
     /// <summary>
-    /// Lecturer's phone number.
-    /// Stored as string to accommodate different phone number formats.
+    ///     Lecturer's phone number.
+    ///     Stored as string to accommodate different phone number formats.
     /// </summary>
     [Required(ErrorMessage = "Phone number is required")]
-    [MaxLength(20, ErrorMessage = "Phone number cannot exceed 20 characters")] // Increased maxLength to 20 for flexibility
+    [MaxLength(20,
+        ErrorMessage = "Phone number cannot exceed 20 characters")] // Increased maxLength to 20 for flexibility
     public required string Phone { get; set; } // Stored as string for format flexibility
 
     /// <summary>
-    /// Department to which the lecturer belongs.
-    /// Example: "Computer Science Department", "Mathematics Department".
+    ///     Department to which the lecturer belongs.
+    ///     Example: "Computer Science Department", "Mathematics Department".
     /// </summary>
     [Required(ErrorMessage = "Department is required")]
     [MaxLength(50, ErrorMessage = "Department cannot exceed 50 characters")]
     public required string Department { get; set; }
 
     /// <summary>
-    /// Date when the lecturer was hired by the institution.
+    ///     Date when the lecturer was hired by the institution.
     /// </summary>
     [Required(ErrorMessage = "Hire date is required")]
     public DateTimeOffset HireDate { get; set; }
 
     /// <summary>
-    /// Lecturer's office location within the institution.
-    /// Example: "Room 302, Science Building", "Online Office Hours".
+    ///     Lecturer's office location within the institution.
+    ///     Example: "Room 302, Science Building", "Online Office Hours".
     /// </summary>
     [Required(ErrorMessage = "Office location is required")]
     [MaxLength(50, ErrorMessage = "Office location cannot exceed 50 characters")]
     public required string OfficeLocation { get; set; }
 
     /// <summary>
-    /// Lecturer's professional credentials or qualifications.
-    /// Example: "Ph.D. in Computer Science", "MSc in Mathematics, Certified Teacher".
+    ///     Lecturer's professional credentials or qualifications.
+    ///     Example: "Ph.D. in Computer Science", "MSc in Mathematics, Certified Teacher".
     /// </summary>
     [MaxLength(200, ErrorMessage = "Credentials cannot exceed 200 characters")]
     public required string Credentials { get; set; } // Made 'required' as credentials are usually essential
 
     /// <summary>
-    /// Lecturer's gender.
-    /// Uses the Gender enum for predefined gender options.
-    /// Nullable, indicating gender is optional information.
+    ///     Lecturer's gender.
+    ///     Uses the Gender enum for predefined gender options.
+    ///     Nullable, indicating gender is optional information.
     /// </summary>
     [EnumDataType(typeof(Gender))]
     public Gender? Gender { get; set; } // Made Gender nullable to indicate it's optional
@@ -154,19 +154,18 @@ public class Lecturer
     #region Navigation Properties
 
     /// <summary>
-    /// Navigation property for ClassSchedules.
-    /// Represents the classes scheduled and taught by this lecturer.
-    /// Defines a one-to-many relationship between Lecturer and ClassSchedule.
+    ///     Navigation property for ClassSchedules.
+    ///     Represents the classes scheduled and taught by this lecturer.
+    ///     Defines a one-to-many relationship between Lecturer and ClassSchedule.
     /// </summary>
     public ICollection<ClassSchedule> ClassSchedules { get; set; }
 
     /// <summary>
-    /// Navigation property for Evaluations.
-    /// Represents the lecturer evaluations conducted for this lecturer.
-    /// Defines a one-to-many relationship between Lecturer and LecturerEvaluation.
+    ///     Navigation property for Evaluations.
+    ///     Represents the lecturer evaluations conducted for this lecturer.
+    ///     Defines a one-to-many relationship between Lecturer and LecturerEvaluation.
     /// </summary>
     public ICollection<LecturerEvaluation> Evaluations { get; set; }
-    
 
     #endregion
 }
