@@ -2,7 +2,7 @@ using ischool_backend.Core.Entities;
 using ischool_backend.Infrastructure.Configurations;
 using Microsoft.EntityFrameworkCore;
 
-namespace ischool_backend.Infrastructure;
+namespace ischool_backend.Infrastructure.Repositories;
 
 public class RepositoryContext : DbContext
 {

@@ -1,6 +1,6 @@
 ﻿using ischool_backend.Core.Entities;
 
-namespace ischool_backend.Core.Interfaces;
+namespace ischool_backend.Core.Interfaces.Repository;
 
 public interface IBookRepository : IRespositoryBase<Book>
 {

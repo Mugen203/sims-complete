@@ -1,4 +1,4 @@
-using ischool_backend.Infrastructure;
+using ischool_backend.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 

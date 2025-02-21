@@ -1,8 +1,9 @@
 ﻿using System.Linq.Expressions;
 using ischool_backend.Core.Interfaces;
+using ischool_backend.Core.Interfaces.Repository;
 using Microsoft.EntityFrameworkCore;
 
-namespace ischool_backend.Infrastructure;
+namespace ischool_backend.Infrastructure.Repositories;
 
 /// <summary>
 /// Base repository class providing a generic implementation of data access operations
@@ -21,6 +22,7 @@ public class RepositoryBase<T> : IRespositoryBase<T> where T : class
     {
         _repositoryContext = repositoryContext;
     }
+    
 
     /// <inheritdoc />
     public IQueryable<T> FindAll(bool trackChanges)

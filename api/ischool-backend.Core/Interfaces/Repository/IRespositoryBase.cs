@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace ischool_backend.Core.Interfaces;
+namespace ischool_backend.Core.Interfaces.Repository;
 
 /// <summary>
 /// Generic repository interface defining common data access operations for entities of type T.
