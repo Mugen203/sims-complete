@@ -1,6 +1,4 @@
-﻿using ischool_backend.Core.Interfaces.Service;
-
-namespace ischool_backend.Core.Interfaces.Repository;
+﻿namespace ischool_backend.Core.Interfaces.Repository;
 
 public interface IRepositoryManager
 {
