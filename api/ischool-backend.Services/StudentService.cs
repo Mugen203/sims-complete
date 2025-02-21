@@ -2,7 +2,7 @@
 using ischool_backend.Core.Interfaces.Repository;
 using ischool_backend.Core.Interfaces.Service;
 
-namespace ischool_backend.Service;
+namespace ischool_backend.Services;
 
 internal sealed class StudentService : IStudentService
 {

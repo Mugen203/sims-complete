@@ -8,24 +8,68 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd4fc1eb-aa0f-400f-a15e-04b6c7747de6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IAttendanceRecordRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IClassEnrollmentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IClassScheduleRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IClassSessionRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IFeeAccountRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IFeePaymentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IGradeRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/ILecturerEvaluationRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/AttendanceRecordRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/ClassEnrollmentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/ClassScheduleRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/ClassSessionRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/FeeAccountRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/FeePaymentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/GradeRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/LecturerEvaluationRepository.cs" afterDir="false" />
+    <list default="true" id="cd4fc1eb-aa0f-400f-a15e-04b6c7747de6" name="Changes" comment="Added service interfaces for the relevant entities">
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IServiceManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/AttendanceRecordService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/BookService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/BorrowRequestService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/ClassEnrollmentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/ClassScheduleService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/ClassService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/ClassSessionService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/CourseService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/FeeAccountService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/FeePaymentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/GradeService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/LecturerEvaluationService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/LecturerService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/ServiceManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/StudentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/ischool-backend.Services.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/Debug/net9.0/ischool-backend.Service.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/Debug/net9.0/ischool-backend.Service.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/Debug/net9.0/ischool-backend.Service.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/Debug/net9.0/ischool-backend.Service.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/Debug/net9.0/ischool-backend.Service.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/ischool-backend.Service.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/ischool-backend.Service.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/ischool-backend.Service.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ischool-backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ischool-backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/Extensions/ServiceExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/Extensions/ServiceExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/ischool-backend.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/ischool-backend.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/ischool-backend.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/ischool-backend.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IBorrowRequestRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IBorrowRequestRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IRespositoryBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IRespositoryBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IAttendanceRecordService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IAttendanceRecordService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IBookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IBookService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IBorrowRequestService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IBorrowRequestService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IClassEnrollmentService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IClassEnrollmentService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IClassScheduleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IClassScheduleService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IClassService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IClassService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IClassSessionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IClassSessionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/ICourseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/ICourseService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IFeeAccountService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IFeeAccountService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IFeePaymentService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IFeePaymentService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IGradeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IGradeService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/ILecturerEvaluationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/ILecturerEvaluationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/ILecturerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/ILecturerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IStudentService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IStudentService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/ischool-backend.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/ischool-backend.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/FeeAccountRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/FeeAccountRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/RepositoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/RepositoryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +171,7 @@
       <workItem from="1740026146380" duration="5257000" />
       <workItem from="1740039350929" duration="8914000" />
       <workItem from="1740119226688" duration="16760000" />
-      <workItem from="1740147006627" duration="4886000" />
+      <workItem from="1740147006627" duration="9745000" />
     </task>
     <task id="LOCAL-00001" summary="Reformatted with Rider">
       <option name="closed" value="true" />
@@ -137,7 +181,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740137399420</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added interfaces and repository stubs for AttendanceRecord, ClassSession, Grade, ClassEnrollment, ClassSchedule, LecturerEvaluation, FeePayment, FeeAccount">
+      <option name="closed" value="true" />
+      <created>1740152030435</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740152030435</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added service interfaces for the relevant entities">
+      <option name="closed" value="true" />
+      <created>1740152467162</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740152467162</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +208,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Reformatted with Rider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformatted with Rider" />
+    <MESSAGE value="Added interfaces and repository stubs for AttendanceRecord, ClassSession, Grade, ClassEnrollment, ClassSchedule, LecturerEvaluation, FeePayment, FeeAccount" />
+    <MESSAGE value="Added service interfaces for the relevant entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added service interfaces for the relevant entities" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

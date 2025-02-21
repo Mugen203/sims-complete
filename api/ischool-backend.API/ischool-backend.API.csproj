@@ -19,6 +19,7 @@
         <ProjectReference Include="..\ischool-backend.Common\ischool-backend.Common.csproj"/>
         <ProjectReference Include="..\ischool-backend.Core\ischool-backend.Core.csproj"/>
         <ProjectReference Include="..\ischool-backend.Infrastructure\ischool-backend.Infrastructure.csproj"/>
+        <ProjectReference Include="..\ischool-backend.Services\ischool-backend.Services.csproj" />
     </ItemGroup>
 
     <ItemGroup>

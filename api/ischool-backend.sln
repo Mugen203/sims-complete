@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ischool-backend.Core", "isc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ischool-backend.Infrastructure", "ischool-backend.Infrastructure\ischool-backend.Infrastructure.csproj", "{8F55B7E9-DABA-46E2-9B8A-043FA609E3A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ischool-backend.Services", "ischool-backend.Services\ischool-backend.Services.csproj", "{1AC90018-9625-4D82-9D99-7C412ACD4DEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{8F55B7E9-DABA-46E2-9B8A-043FA609E3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F55B7E9-DABA-46E2-9B8A-043FA609E3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F55B7E9-DABA-46E2-9B8A-043FA609E3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC90018-9625-4D82-9D99-7C412ACD4DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC90018-9625-4D82-9D99-7C412ACD4DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC90018-9625-4D82-9D99-7C412ACD4DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC90018-9625-4D82-9D99-7C412ACD4DEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

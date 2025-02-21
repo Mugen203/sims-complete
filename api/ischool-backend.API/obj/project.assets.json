@@ -1779,6 +1779,21 @@
         "runtime": {
           "bin/placeholder/ischool-backend.Infrastructure.dll": {}
         }
+      },
+      "ischool-backend.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ischool-backend.Common": "1.0.0",
+          "ischool-backend.Core": "1.0.0",
+          "ischool-backend.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ischool-backend.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ischool-backend.Services.dll": {}
+        }
       }
     }
   },
@@ -5045,6 +5060,11 @@
       "type": "project",
       "path": "../ischool-backend.Infrastructure/ischool-backend.Infrastructure.csproj",
       "msbuildProject": "../ischool-backend.Infrastructure/ischool-backend.Infrastructure.csproj"
+    },
+    "ischool-backend.Services/1.0.0": {
+      "type": "project",
+      "path": "../ischool-backend.Services/ischool-backend.Services.csproj",
+      "msbuildProject": "../ischool-backend.Services/ischool-backend.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5053,7 +5073,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.2",
       "ischool-backend.Common >= 1.0.0",
       "ischool-backend.Core >= 1.0.0",
-      "ischool-backend.Infrastructure >= 1.0.0"
+      "ischool-backend.Infrastructure >= 1.0.0",
+      "ischool-backend.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5089,6 +5110,9 @@
             },
             "C:\\Users\\Radahn\\WebstormProjects\\sims-complete\\api\\ischool-backend.Infrastructure\\ischool-backend.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\Radahn\\WebstormProjects\\sims-complete\\api\\ischool-backend.Infrastructure\\ischool-backend.Infrastructure.csproj"
+            },
+            "C:\\Users\\Radahn\\WebstormProjects\\sims-complete\\api\\ischool-backend.Services\\ischool-backend.Services.csproj": {
+              "projectPath": "C:\\Users\\Radahn\\WebstormProjects\\sims-complete\\api\\ischool-backend.Services\\ischool-backend.Services.csproj"
             }
           }
         }

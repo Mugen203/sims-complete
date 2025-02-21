@@ -3065,11 +3065,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Radahn\\WebstormProjects\\sims-complete\\api\\ischool-backend.Service\\ischool-backend.Service.csproj",
-      "projectName": "ischool-backend.Service",
-      "projectPath": "C:\\Users\\Radahn\\WebstormProjects\\sims-complete\\api\\ischool-backend.Service\\ischool-backend.Service.csproj",
+      "projectUniqueName": "C:\\Users\\Radahn\\WebstormProjects\\sims-complete\\api\\ischool-backend.Services\\ischool-backend.Services.csproj",
+      "projectName": "ischool-backend.Services",
+      "projectPath": "C:\\Users\\Radahn\\WebstormProjects\\sims-complete\\api\\ischool-backend.Services\\ischool-backend.Services.csproj",
       "packagesPath": "C:\\Users\\Radahn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Radahn\\WebstormProjects\\sims-complete\\api\\ischool-backend.Service\\obj\\",
+      "outputPath": "C:\\Users\\Radahn\\WebstormProjects\\sims-complete\\api\\ischool-backend.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Radahn\\AppData\\Roaming\\NuGet\\NuGet.Config"
