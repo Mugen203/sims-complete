@@ -482,3 +482,13 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Rider specific
+.idea/
+*.sln.iml
+.idea.*
+.idea/**
+*.DotSettings
+riderModule.iml
+/_ReSharper.Caches/
+modules.xml

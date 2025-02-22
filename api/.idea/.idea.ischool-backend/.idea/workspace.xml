@@ -8,58 +8,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd4fc1eb-aa0f-400f-a15e-04b6c7747de6" name="Changes" comment="Added XML comments for RepositoryManager.cs and ServiceManager.cs">
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Enums/ClassLocation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Enums/CommonPaymentMethod.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Enums/CommonPaymentStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Enums/CommonSemester.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Models/ClassSessionDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Models/CourseGradeDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Models/FeeAccountDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Models/FeePaymentDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Models/FeeStatementDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Models/GpaDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Models/GradeReportDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Models/StudentScheduleDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Common/Models/TranscriptDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/User.cs" afterDir="false" />
+    <list default="true" id="cd4fc1eb-aa0f-400f-a15e-04b6c7747de6" name="Changes" comment="Add gitignore">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ischool-backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ischool-backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/Extensions/ServiceExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/Extensions/ServiceExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.API/ischool-backend.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/ischool-backend.API.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.API/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.API/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Common/obj/Debug/net9.0/ischool-backend.Common.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/ClassEnrollment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/ClassEnrollment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/ClassSchedule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/ClassSchedule.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Entities/FeeAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Entities/FeeAccount.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IClassEnrollmentRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IClassEnrollmentRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/ICourseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/ICourseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IFeeAccountRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IFeeAccountRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IGradeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IGradeRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IStudentRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Repository/IStudentRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IGradeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IGradeService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IStudentService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/Interfaces/Service/IStudentService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/ClassEnrollmentRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/ClassEnrollmentRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/CourseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/CourseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/FeeAccountRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/FeeAccountRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/GradeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/GradeRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/RepositoryContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/RepositoryContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/StudentRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/Repositories/StudentRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Infrastructure/obj/Debug/net9.0/ischool-backend.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Services/GradeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Services/GradeService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ischool-backend.Services/StudentService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Services/StudentService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Services/obj/Debug/net9.0/ischool-backend.Services.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/Debug/net9.0/ischool-backend.Services.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ischool-backend.Services/obj/Debug/net9.0/ischool-backend.Services.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/Debug/net9.0/ischool-backend.Services.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ischool-backend.Services/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ischool-backend.Services/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -77,8 +50,9 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/Radahn/WebstormProjects/sims-complete/api/ischool-backend.Infrastructure/Repositories/RepositoryManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Radahn/WebstormProjects/sims-complete/api/ischool-backend.Services/ServiceManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Radahn/WebstormProjects/sims-complete/api/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Radahn/WebstormProjects/sims-complete/api/ischool-backend.API/obj/Debug/net9.0/ischool-backend.API.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Radahn/WebstormProjects/sims-complete/api/ischool-backend.Core/obj/Debug/net9.0/ischool-backend.Core.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -157,7 +131,8 @@
       <workItem from="1740026146380" duration="5257000" />
       <workItem from="1740039350929" duration="8914000" />
       <workItem from="1740119226688" duration="16760000" />
-      <workItem from="1740147006627" duration="26589000" />
+      <workItem from="1740147006627" duration="30107000" />
+      <workItem from="1740225019968" duration="891000" />
     </task>
     <task id="LOCAL-00001" summary="Reformatted with Rider">
       <option name="closed" value="true" />
@@ -191,7 +166,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740158639436</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactored GetTranscriptAsync to use the Gpa Dto and the GpaCalculator utility to simplify the logic">
+      <option name="closed" value="true" />
+      <created>1740176310324</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740176310324</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add gitignore">
+      <option name="closed" value="true" />
+      <created>1740225284509</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740225284509</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +196,9 @@
     <MESSAGE value="Added interfaces and repository stubs for AttendanceRecord, ClassSession, Grade, ClassEnrollment, ClassSchedule, LecturerEvaluation, FeePayment, FeeAccount" />
     <MESSAGE value="Added service interfaces for the relevant entities" />
     <MESSAGE value="Added XML comments for RepositoryManager.cs and ServiceManager.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added XML comments for RepositoryManager.cs and ServiceManager.cs" />
+    <MESSAGE value="Refactored GetTranscriptAsync to use the Gpa Dto and the GpaCalculator utility to simplify the logic" />
+    <MESSAGE value="Add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gitignore" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
